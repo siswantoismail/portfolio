@@ -51,7 +51,7 @@ function Services() {
         }}
         className="mb-14 text-center"
       >
-        <h2 className="text-4xl font-bold text-white">What I Do Best</h2>
+        <h2 className="text-4xl font-bold text-white">What I Build</h2>
 
         <p className="mt-3 text-slate-400">
           Services and skills I offer as a Frontend Developer.
@@ -96,7 +96,7 @@ function Services() {
                 backdrop-blur-sm
                 transition-all
                 duration-300
-                hover:border-violet-500/40
+                hover:border-blue-500/40
                 hover:shadow-[0_0_35px_rgba(139,92,246,0.25)]
               "
             >

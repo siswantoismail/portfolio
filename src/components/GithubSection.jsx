@@ -6,17 +6,17 @@ function GithubSection() {
 
         <div className="mt-10 grid gap-6 md:grid-cols-3">
           <div>
-            <h3 className="text-4xl font-bold text-violet-500">150+</h3>
+            <h3 className="text-4xl font-bold text-blue-500">150+</h3>
             <p>Commits</p>
           </div>
 
           <div>
-            <h3 className="text-4xl font-bold text-violet-500">20+</h3>
+            <h3 className="text-4xl font-bold text-blue-500">20+</h3>
             <p>Repositories</p>
           </div>
 
           <div>
-            <h3 className="text-4xl font-bold text-violet-500">10+</h3>
+            <h3 className="text-4xl font-bold text-blue-500">10+</h3>
             <p>Projects</p>
           </div>
         </div>

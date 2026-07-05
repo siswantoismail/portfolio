@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaInstagram } from "react-icons/fa";
 import { Mail, Phone } from "lucide-react";
 
 function Contact() {
@@ -7,26 +7,26 @@ function Contact() {
     {
       icon: Mail,
       title: "Email",
-      value: "siswanto@gmail.com",
-      link: "mailto:siswanto@gmail.com",
+      value: "siswantoismail173@gmail.com",
+      link: "mailto:siswantoismail173@gmail.com",
     },
     {
       icon: Phone,
       title: "WhatsApp",
-      value: "+62 812-3456-7890",
-      link: "https://wa.me/6281234567890",
+      value: "+6289530279479",
+      link: "https://wa.me/+6289530279479",
     },
     {
       icon: FaGithub,
       title: "GitHub",
-      value: "github.com/siswanto",
-      link: "https://github.com/",
+      value: "https://github.com/siswantoismail",
+      link: "https://github.com/siswantoismail",
     },
     {
-      icon: FaLinkedin,
-      title: "LinkedIn",
-      value: "linkedin.com/in/siswanto",
-      link: "https://linkedin.com/",
+      icon: FaInstagram,
+      title: "Instagram",
+      value: "@rhmtismail17",
+      link: "https://instagram.com/rhmtismail17",
     },
   ];
 
@@ -34,6 +34,19 @@ function Contact() {
     <section id="contact" className="mx-auto max-w-7xl px-6 py-5">
       <div className="relative overflow-hidden rounded-3xl border border-slate-800 bg-slate-900/50 p-8 backdrop-blur-sm">
         {/* Animated Glow */}
+        <motion.h2
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{
+            opacity: 1,
+            y: 0,
+          }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.7 }}
+          className="mb-12 text-center text-4xl font-bold text-white"
+        >
+          Contact Me
+        </motion.h2>
+
         <motion.div
           animate={{
             scale: [1, 1.2, 1],
@@ -50,7 +63,7 @@ function Contact() {
             h-72
             w-72
             rounded-full
-            bg-violet-600/20
+            bg-blue-600/20
             blur-[100px]
           "
         />
@@ -77,7 +90,7 @@ function Contact() {
             <h2 className="mb-4 text-5xl font-bold leading-tight text-white">
               Let's build something
               <br />
-              <span className="text-violet-500">amazing together!</span>
+              <span className="text-blue-500">amazing together!</span>
             </h2>
 
             <p className="text-slate-400">
@@ -124,7 +137,7 @@ function Contact() {
                     p-5
                     transition-all
                     duration-300
-                    hover:border-violet-500/40
+                    hover:border-blue-500/40
                     hover:shadow-[0_0_25px_rgba(139,92,246,0.25)]
                   "
                 >
@@ -139,7 +152,7 @@ function Contact() {
                       delay: index * 0.3,
                     }}
                   >
-                    <Icon size={28} className="mb-4 text-violet-400" />
+                    <Icon size={28} className="mb-4 text-blue-400" />
                   </motion.div>
 
                   <h3 className="mb-1 font-semibold text-white">
@@ -153,42 +166,6 @@ function Contact() {
           </div>
         </div>
       </div>
-
-      {/* Footer */}
-      <motion.div
-        initial={{
-          opacity: 0,
-          y: 20,
-        }}
-        whileInView={{
-          opacity: 1,
-          y: 0,
-        }}
-        viewport={{
-          once: true,
-        }}
-        transition={{
-          duration: 0.8,
-        }}
-        className="
-          mt-8
-          flex
-          flex-col
-          items-center
-          justify-between
-          gap-4
-          border-t
-          border-slate-800
-          pt-6
-          text-sm
-          text-slate-500
-          md:flex-row
-        "
-      >
-        <p>© 2026 Siswanto Ismail. All rights reserved.</p>
-
-        <p>Built with ❤️ using React & Tailwind CSS</p>
-      </motion.div>
     </section>
   );
 }

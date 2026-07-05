@@ -8,30 +8,30 @@ function TechStack() {
       icon: <FaReact />,
       name: "React",
       exp: "2+ Years",
-      level: "Frontend Development",
+      level: "Daily Use",
       color: "text-cyan-400",
       bg: "bg-cyan-500/10",
     },
     {
       icon: <FaJs />,
       name: "JavaScript",
-      exp: "2+ Years",
-      level: "Frontend Development",
+      exp: "3+ Years",
+      level: "Daily Use",
       color: "text-yellow-400",
       bg: "bg-yellow-500/10",
     },
     {
       icon: <RiTailwindCssFill />,
       name: "Tailwind CSS",
-      exp: "2+ Years",
-      level: "Frontend Development",
+      exp: "3+ Years",
+      level: "Daily Use",
       color: "text-sky-400",
       bg: "bg-sky-500/10",
     },
     {
       icon: <FaGitAlt />,
       name: "Git",
-      exp: "1+ Year",
+      exp: "2+ Year",
       level: "Intermediate",
       color: "text-orange-400",
       bg: "bg-orange-500/10",
@@ -39,10 +39,10 @@ function TechStack() {
     {
       icon: <FaGithub />,
       name: "GitHub",
-      exp: "1+ Year",
+      exp: "2+ Year",
       level: "Intermediate",
-      color: "text-violet-400",
-      bg: "bg-violet-500/10",
+      color: "text-blue-400",
+      bg: "bg-blue-500/10",
     },
   ];
 
@@ -98,7 +98,7 @@ function TechStack() {
               backdrop-blur-sm
               transition-all
               duration-300
-              hover:border-violet-500/40
+              hover:border-blue-500/40
               hover:shadow-[0_0_30px_rgba(139,92,246,0.25)]
             "
           >
@@ -134,7 +134,7 @@ function TechStack() {
             </h3>
 
             {/* Level */}
-            <p className="mb-3 text-sm text-violet-400">{tech.level}</p>
+            <p className="mb-3 text-sm text-blue-400">{tech.level}</p>
 
             {/* Experience */}
             <div className="rounded-xl bg-slate-800/60 px-3 py-2 text-sm text-slate-300">

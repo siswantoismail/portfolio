@@ -118,7 +118,7 @@ function Workflow() {
                       w-full
                       border-t
                       border-dashed
-                      border-violet-500/40
+                      border-blue-500/40
                       md:block
                     "
                   />
@@ -144,14 +144,14 @@ function Workflow() {
                     justify-center
                     rounded-full
                     border
-                    border-violet-500/40
+                    border-blue-500/40
                     bg-gradient-to-br
-                    from-violet-500/20
+                    from-blue-500/20
                     to-blue-500/10
                     shadow-[0_0_25px_rgba(139,92,246,0.3)]
                   "
                 >
-                  <Icon size={26} className="text-violet-400" />
+                  <Icon size={26} className="text-blue-400" />
                 </motion.div>
 
                 {/* Step Number */}

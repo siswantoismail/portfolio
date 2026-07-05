@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import dasbordPmobil from "../assets/dasbordPmobil.png";
-import dasboardKT from "../assets/dasboardKT.png";
 import KT from "../assets/KT.png";
 import dashboardRS from "../assets/dashboardRS.png";
 
@@ -10,21 +9,21 @@ function Projects() {
       title: "Hospital Dashboard",
       desc: "Dashboard for managing hospital data.",
       image: dasbordPmobil,
-      github: "https://github.siswantoismail.com",
+      github: "https://github.com/siswantoismail/ecommerce",
       demo: "https://hospital.siswantoismail.com",
     },
     {
       title: "Krawang Tailor",
       desc: "E-commerce website for a local tailor.",
       image: KT,
-      github: "https://github.siswantoismail.com",
-      demo: "https://krawang.siswantoismail.com",
+      github: "https://github.com/siswantoismail/krawangtailor",
+      demo: "https://krawangtailor-iwan.vercel.app/",
     },
     {
       title: "Complaint Information System",
       desc: "Public complaint management application.",
       image: dashboardRS,
-      github: "https://github.siswantoismail.com",
+      github: "https://github.com/siswantoismail/hospital-admin",
       demo: "https://complaint.siswantoismail.com",
     },
   ];
@@ -81,7 +80,7 @@ function Projects() {
               backdrop-blur-sm
               transition-all
               duration-300
-              hover:border-violet-500/40
+              hover:border-blue-500/40
               hover:shadow-[0_0_30px_rgba(139,92,246,0.25)]
             "
           >
@@ -111,7 +110,7 @@ function Projects() {
 
               {/* Tech Stack */}
               <div className="mt-4 flex flex-wrap gap-2">
-                <span className="rounded-full bg-violet-500/10 px-3 py-1 text-xs text-violet-300">
+                <span className="rounded-full bg-blue-500/10 px-3 py-1 text-xs text-blue-300">
                   React
                 </span>
 
@@ -138,14 +137,14 @@ function Projects() {
                   }}
                   className="
                     rounded-xl
-                    bg-violet-600
+                    bg-blue-600
                     px-4
                     py-2
                     text-sm
                     font-medium
                     text-white
                     transition
-                    hover:bg-violet-700
+                    hover:bg-blue-700
                   "
                 >
                   Live Demo
@@ -171,7 +170,7 @@ function Projects() {
                     font-medium
                     text-white
                     transition
-                    hover:border-violet-500
+                    hover:border-blue-500
                   "
                 >
                   GitHub

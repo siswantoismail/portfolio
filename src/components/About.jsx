@@ -54,7 +54,7 @@ function About() {
         About Me
       </motion.h2>
 
-      <div className="grid gap-8 lg:grid-cols-2">
+      <div className="grid gap-10 lg:grid-cols-[3fr_2fr]">
         {/* LEFT SIDE */}
         <motion.div
           initial={{ opacity: 0, x: -80 }}
@@ -64,7 +64,7 @@ function About() {
           }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="flex flex-col gap-6 md:flex-row"
+          className="flex flex-col items-center gap-6 md:flex-row"
         >
           {/* PHOTO */}
           <div className="relative flex-shrink-0">
@@ -82,7 +82,7 @@ function About() {
                 absolute
                 inset-0
                 rounded-3xl
-                bg-violet-600/30
+                bg-blue-600/30
                 blur-3xl
               "
             />
@@ -114,7 +114,7 @@ function About() {
           </div>
 
           {/* CONTENT */}
-          <div className="flex flex-col justify-center">
+          <div className="flex flex-col items-center justify-center">
             <motion.p
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
@@ -122,59 +122,16 @@ function About() {
               transition={{ delay: 0.2 }}
               className="mb-5 leading-8 text-slate-300"
             >
-              I'm a final-year Informatics Engineering student who loves
-              building beautiful and functional web applications.
+              I'm a Frontend Developer focused on developing modern, responsive,
+              and user-friendly web applications using React.js, JavaScript, and
+              Tailwind CSS. I've developed various projects, from administration
+              dashboards and information systems to e-commerce websites,
+              prioritizing performance, attractive design, and optimal user
+              experience. I believe that technology can be a solution to various
+              problems, so I continue to learn, develop my skills, and
+              contribute to building digital products that provide real
+              benefits.
             </motion.p>
-
-            <motion.p
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.4 }}
-              className="mb-5 leading-8 text-slate-300"
-            >
-              I focus on frontend development using React, JavaScript, and
-              Tailwind CSS. I enjoy turning ideas into real products.
-            </motion.p>
-
-            <motion.p
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.6 }}
-              className="mb-8 leading-8 text-slate-300"
-            >
-              I am passionate about learning, solving problems, and creating
-              impactful digital experiences.
-            </motion.p>
-
-            <motion.button
-              whileHover={{
-                scale: 1.05,
-                boxShadow: "0 0 25px rgba(139,92,246,0.3)",
-              }}
-              whileTap={{
-                scale: 0.95,
-              }}
-              className="
-                flex
-                w-fit
-                items-center
-                gap-2
-                rounded-xl
-                border
-                border-violet-500/30
-                bg-violet-600/10
-                px-6
-                py-3
-                text-violet-400
-                transition
-                hover:bg-violet-600/20
-              "
-            >
-              More About Me
-              <ArrowRight size={18} />
-            </motion.button>
           </div>
         </motion.div>
 
@@ -217,10 +174,10 @@ function About() {
                   }}
                   className="flex gap-4"
                 >
-                  <Icon className="mt-1 text-violet-400" size={24} />
+                  <Icon className="mt-1 text-blue-400" size={24} />
 
                   <div>
-                    <h3 className="mb-2 text-lg font-semibold text-violet-400">
+                    <h3 className="mb-2 text-lg font-semibold text-blue-400">
                       {item.title}
                     </h3>
 

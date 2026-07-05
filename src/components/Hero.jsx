@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import wisudah from "../assets/wisudah.png";
 import about from "../assets/about.png";
 
 function Hero() {
@@ -47,7 +46,7 @@ function Hero() {
           repeat: Infinity,
           ease: "easeInOut",
         }}
-        className="absolute top-0 left-1/2 h-96 w-96 -translate-x-1/2 rounded-full bg-violet-600/20 blur-[120px]"
+        className="absolute top-0 left-1/2 h-96 w-96 -translate-x-1/2 rounded-full bg-blue-600/20 blur-[120px]"
       />
 
       <div className="grid items-center gap-20 lg:grid-cols-[1.2fr_0.8fr]">
@@ -63,7 +62,7 @@ function Hero() {
             <br />
             I build clean,
             <br />
-            <span className="text-violet-500">
+            <span className="text-blue-500">
               {" "}
               scalable interfaces that users enjoy using.
             </span>
@@ -87,27 +86,51 @@ function Hero() {
             transition={{ delay: 0.9 }}
             className="mt-8 flex flex-wrap gap-4"
           >
-            <motion.button
-              whileHover={{
-                scale: 1.05,
-                boxShadow: "0 0 25px rgba(139,92,246,0.5)",
-              }}
+            <motion.a
+              href="#projects"
+              whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="rounded-xl bg-violet-600 px-6 py-3 font-medium text-white transition"
+              className="
+    flex
+    items-center
+    gap-2
+    rounded-xl
+    bg-blue-600
+    px-6
+    py-3
+    font-medium
+    text-white
+    transition
+    hover:bg-blue-500
+  "
             >
               View Projects
-            </motion.button>
+              {/* <FiArrowRight /> */}
+            </motion.a>
 
-            <motion.button
-              whileHover={{
-                scale: 1.05,
-                borderColor: "#8b5cf6",
-              }}
+            <motion.a
+              href="/CV-Siswanto-Ismail.pdf"
+              download
+              whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="rounded-xl border border-slate-700 px-6 py-3 font-medium text-white transition"
+              className="
+    flex
+    items-center
+    gap-2
+    rounded-xl
+    border
+    border-slate-700
+    px-6
+    py-3
+    font-medium
+    text-white
+    transition
+    hover:border-blue-500
+  "
             >
+              {/* <FiDownload /> */}
               Download CV
-            </motion.button>
+            </motion.a>
           </motion.div>
 
           {/* Stats */}
@@ -123,12 +146,12 @@ function Hero() {
             </div>
 
             <div>
-              <h3 className="text-3xl font-bold text-white">2+</h3>
+              <h3 className="text-3xl font-bold text-white">4+</h3>
               <p className="text-slate-400">Years Learning</p>
             </div>
 
             <div>
-              <h3 className="text-3xl font-bold text-white">1000+</h3>
+              <h3 className="text-3xl font-bold text-white">8000+</h3>
               <p className="text-slate-400">Hours Coding</p>
             </div>
           </motion.div>
@@ -143,10 +166,10 @@ function Hero() {
         >
           <div className="relative">
             {/* Soft Glow */}
-            <div className="absolute inset-0 rounded-[32px] bg-violet-500/15 blur-3xl scale-110" />
+            <div className="absolute inset-0 rounded-[32px] bg-blue-500/15 blur-3xl scale-110" />
 
             {/* Gradient Border */}
-            <div className="absolute -inset-[2px] rounded-[32px] bg-gradient-to-br from-violet-500/40 to-fuchsia-500/30 blur-sm" />
+            <div className="absolute -inset-0.5 rounded-4xl bg-gradient-to-br from-blue-500/40 to-blue-500/30 blur-sm" />
 
             {/* Image Container */}
             <motion.div
@@ -160,7 +183,7 @@ function Hero() {
         overflow-hidden
         rounded-[30px]
         border
-        border-violet-500/20
+        border-blue-500/20
         bg-slate-900
         shadow-[0_0_35px_rgba(139,92,246,0.18)]
       "

@@ -7,7 +7,7 @@ import Services from "./components/Services";
 import Workflow from "./components/Workflow";
 import About from "./components/About";
 import Contact from "./components/Contact";
-// import Footer from "./components/Footer";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -21,7 +21,7 @@ function App() {
       <Workflow />
       <About />
       <Contact />
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
