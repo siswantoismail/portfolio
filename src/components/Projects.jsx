@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import dasbordPmobil from "../assets/dasbordPmobil.png";
+import DasbordPmobil from "../assets/DasbordPmobil.png";
 import KT from "../assets/KT.png";
 import dashboardRS from "../assets/dashboardRS.png";
 
@@ -8,7 +8,7 @@ function Projects() {
     {
       title: "Car Sales Website",
       desc: "A responsive car sales management website that allows users to browse vehicles, view detailed information, and manage inventory through a modern admin dashboard.",
-      image: dasbordPmobil,
+      image: DasbordPmobil,
       github: "https://github.com/siswantoismail/ecommerce",
       demo: "https://penjualanmobil.vercel.app/",
     },
