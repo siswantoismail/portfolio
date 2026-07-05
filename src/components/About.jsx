@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import about from "../assets/about.png";
-import { GraduationCap, Code2, Heart, ArrowRight } from "lucide-react";
+import { GraduationCap, Code2, Heart } from "lucide-react";
 
 function About() {
   const infoCards = [
@@ -67,7 +67,7 @@ function About() {
           className="flex flex-col items-center gap-6 md:flex-row"
         >
           {/* PHOTO */}
-          <div className="relative flex-shrink-0">
+          <div className="relative shrink-0">
             {/* Animated Glow */}
             <motion.div
               animate={{

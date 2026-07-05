@@ -109,8 +109,10 @@ function Hero() {
             </motion.a>
 
             <motion.a
-              href="/CV-Siswanto-Ismail.pdf"
-              download
+              href="/CVSiswantoismail.pdf"
+              // target="_blank"
+              // rel="noopener noreferrer"
+              download="CVSiswantoismail.pdf"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="
@@ -126,9 +128,9 @@ function Hero() {
     text-white
     transition
     hover:border-blue-500
+    hover:bg-blue-500/10
   "
             >
-              {/* <FiDownload /> */}
               Download CV
             </motion.a>
           </motion.div>

@@ -6,22 +6,22 @@ import dashboardRS from "../assets/dashboardRS.png";
 function Projects() {
   const projects = [
     {
-      title: "Hospital Dashboard",
-      desc: "Dashboard for managing hospital data.",
+      title: "Car Sales Website",
+      desc: "A responsive car sales management website that allows users to browse vehicles, view detailed information, and manage inventory through a modern admin dashboard.",
       image: dasbordPmobil,
       github: "https://github.com/siswantoismail/ecommerce",
-      demo: "https://hospital.siswantoismail.com",
+      demo: "https://penjualanmobil.vercel.app/",
     },
     {
       title: "Krawang Tailor",
-      desc: "E-commerce website for a local tailor.",
+      desc: "A responsive tailor business website that showcases services, custom clothing products, and simplifies customer orders through a modern interface.",
       image: KT,
       github: "https://github.com/siswantoismail/krawangtailor",
       demo: "https://krawangtailor-iwan.vercel.app/",
     },
     {
-      title: "Complaint Information System",
-      desc: "Public complaint management application.",
+      title: "Hospital Management System",
+      desc: "A web-based hospital management system designed to streamline administrative tasks such as patient management, doctor scheduling, appointments, and medical records through a modern dashboard.",
       image: dashboardRS,
       github: "https://github.com/siswantoismail/hospital-admin",
       demo: "https://complaint.siswantoismail.com",
