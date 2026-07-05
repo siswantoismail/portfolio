@@ -1,18 +1,31 @@
 import { motion } from "framer-motion";
+import dasbordPmobil from "../assets/dasbordPmobil.png";
+import dasboardKT from "../assets/dasboardKT.png";
+import KT from "../assets/KT.png";
+import dashboardRS from "../assets/dashboardRS.png";
 
 function Projects() {
   const projects = [
     {
       title: "Hospital Dashboard",
       desc: "Dashboard for managing hospital data.",
+      image: dasbordPmobil,
+      github: "https://github.siswantoismail.com",
+      demo: "https://hospital.siswantoismail.com",
+    },
+    {
+      title: "Krawang Tailor",
+      desc: "E-commerce website for a local tailor.",
+      image: KT,
+      github: "https://github.siswantoismail.com",
+      demo: "https://krawang.siswantoismail.com",
     },
     {
       title: "Complaint Information System",
       desc: "Public complaint management application.",
-    },
-    {
-      title: "E-Commerce Frontend",
-      desc: "Responsive ecommerce website.",
+      image: dashboardRS,
+      github: "https://github.siswantoismail.com",
+      demo: "https://complaint.siswantoismail.com",
     },
   ];
 
@@ -73,25 +86,19 @@ function Projects() {
             "
           >
             {/* Image Placeholder */}
-            <div className="overflow-hidden">
-              <motion.div
-                whileHover={{ scale: 1.1 }}
-                transition={{ duration: 0.4 }}
+            <div className="relative h-60 overflow-hidden rounded-t-3xl">
+              <img
+                src={project.image}
+                alt={project.title}
                 className="
-                  flex
-                  h-56
-                  items-center
-                  justify-center
-                  bg-gradient-to-br
-                  from-violet-700/20
-                  via-slate-900
-                  to-purple-900/20
+                  h-full
+                  w-full
+                  object-cover
+                  transition-all
+                  duration-500
+                  group-hover:scale-105
                 "
-              >
-                <span className="text-lg font-medium text-slate-500">
-                  Project Preview
-                </span>
-              </motion.div>
+              />
             </div>
 
             {/* Content */}
@@ -119,7 +126,10 @@ function Projects() {
 
               {/* Buttons */}
               <div className="mt-6 flex gap-4">
-                <motion.button
+                <a
+                  href={project.demo}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   whileHover={{
                     scale: 1.05,
                   }}
@@ -139,9 +149,12 @@ function Projects() {
                   "
                 >
                   Live Demo
-                </motion.button>
+                </a>
 
-                <motion.button
+                <a
+                  href={project.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   whileHover={{
                     scale: 1.05,
                   }}
@@ -162,7 +175,7 @@ function Projects() {
                   "
                 >
                   GitHub
-                </motion.button>
+                </a>
               </div>
             </div>
           </motion.div>

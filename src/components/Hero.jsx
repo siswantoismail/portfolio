@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import wisudah from "../assets/wisudah.png";
+import about from "../assets/about.png";
 
 function Hero() {
   const fadeLeft = {
@@ -49,30 +50,23 @@ function Hero() {
         className="absolute top-0 left-1/2 h-96 w-96 -translate-x-1/2 rounded-full bg-violet-600/20 blur-[120px]"
       />
 
-      <div className="grid items-center gap-16 lg:grid-cols-2">
+      <div className="grid items-center gap-20 lg:grid-cols-[1.2fr_0.8fr]">
         {/* Left Content */}
         <motion.div variants={fadeLeft} initial="hidden" animate="visible">
-          <motion.span
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2 }}
-            className="inline-flex items-center rounded-full border border-violet-500/40 bg-violet-500/10 px-4 py-2 text-sm text-violet-300"
-          >
-            🚀 Available for Internship & Junior Frontend Developer
-          </motion.span>
-
           <motion.h1
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="mt-8 text-5xl font-bold leading-tight md:text-6xl"
+            className="mt-8 text-5xl font-bold leading-tight md:text-6xl lg:text-7xl"
           >
             Frontend Developer
             <br />
-            Building Fast,
+            I build clean,
             <br />
-            Responsive &
-            <span className="text-violet-500"> Modern Web Applications</span>
+            <span className="text-violet-500">
+              {" "}
+              scalable interfaces that users enjoy using.
+            </span>
           </motion.h1>
 
           <motion.p
@@ -145,39 +139,54 @@ function Hero() {
           variants={fadeRight}
           initial="hidden"
           animate="visible"
-          className="flex justify-center"
+          className="flex justify-center lg:justify-end"
         >
           <div className="relative">
-            {/* Glow */}
-            <div className="absolute inset-0 scale-110 rounded-full bg-violet-600/20 blur-3xl" />
+            {/* Soft Glow */}
+            <div className="absolute inset-0 rounded-[32px] bg-violet-500/15 blur-3xl scale-110" />
 
             {/* Gradient Border */}
-            <div className="absolute -inset-1 rounded-[40px] bg-gradient-to-r from-violet-500 to-purple-700 opacity-30 blur" />
+            <div className="absolute -inset-[2px] rounded-[32px] bg-gradient-to-br from-violet-500/40 to-fuchsia-500/30 blur-sm" />
 
-            {/* Image */}
-            <motion.img
-              src={wisudah}
-              alt="Siswanto"
-              animate={{
-                y: [0, -15, 0],
+            {/* Image Container */}
+            <motion.div
+              whileHover={{
+                scale: 1.02,
+                rotate: -1,
               }}
-              transition={{
-                duration: 4,
-                repeat: Infinity,
-                ease: "easeInOut",
-              }}
+              transition={{ duration: 0.3 }}
               className="
-                relative
-                w-[220px]
-                rounded-[40px]
-                border
-                border-violet-500/30
-                object-cover
-                shadow-[0_0_50px_rgba(139,92,246,0.4)]
-                md:w-[320px]
-                lg:w-[400px]
-              "
-            />
+        relative
+        overflow-hidden
+        rounded-[30px]
+        border
+        border-violet-500/20
+        bg-slate-900
+        shadow-[0_0_35px_rgba(139,92,246,0.18)]
+      "
+            >
+              <motion.img
+                src={about}
+                alt="Siswanto Ismail"
+                animate={{
+                  y: [0, -8, 0],
+                }}
+                transition={{
+                  duration: 5,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                }}
+                className="
+          h-[440px]
+          w-[320px]
+          object-cover
+          md:h-[500px]
+          md:w-[340px]
+          lg:h-[540px]
+          lg:w-[360px]
+        "
+              />
+            </motion.div>
           </div>
         </motion.div>
       </div>

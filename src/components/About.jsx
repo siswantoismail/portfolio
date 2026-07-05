@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import wisudah from "../assets/wisudah.png";
+import about from "../assets/about.png";
 import { GraduationCap, Code2, Heart, ArrowRight } from "lucide-react";
 
 function About() {
@@ -106,7 +106,7 @@ function About() {
               "
             >
               <img
-                src={wisudah}
+                src={about}
                 alt="Siswanto"
                 className="h-80 w-64 object-cover"
               />
