@@ -4,7 +4,7 @@ import KT from "../assets/KT.png";
 import dashboardRS from "../assets/dashboardRS.png";
 
 function Projects() {
-  const projects = [
+  const projectss = [
     {
       title: "Car Sales Website",
       desc: "A responsive car sales management website that allows users to browse vehicles, view detailed information, and manage inventory through a modern admin dashboard.",
@@ -48,7 +48,7 @@ function Projects() {
 
       {/* Projects Grid */}
       <div className="grid gap-8 lg:grid-cols-3">
-        {projects.map((project, index) => (
+        {projectss.map((project, index) => (
           <motion.div
             key={project.title}
             initial={{
