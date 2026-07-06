@@ -9,7 +9,7 @@ function Projects() {
       title: "Car Sales Website",
       desc: "A responsive car sales management website that allows users to browse vehicles, view detailed information, and manage inventory through a modern admin dashboard.",
       image: PenjualanMobil,
-      github: "https://github.com/siswantoismail/ecommerce",
+      github: "https://github.com/siswantoismail/penjualanmobil",
       demo: "https://penjualanmobil.vercel.app/",
     },
     {

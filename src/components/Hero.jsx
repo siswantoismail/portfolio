@@ -110,8 +110,6 @@ function Hero() {
 
             <motion.a
               href="/CVSiswantoismail.pdf"
-              // target="_blank"
-              // rel="noopener noreferrer"
               download="CVSiswantoismail.pdf"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
