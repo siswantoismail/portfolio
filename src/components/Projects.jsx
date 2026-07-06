@@ -1,14 +1,14 @@
 import { motion } from "framer-motion";
-import dashboardPmobil from "../assets/dashboardPmobil.png";
 import KT from "../assets/KT.png";
 import dashboardRS from "../assets/dashboardRS.png";
+import PenjualanMobil from "../assets/PenjualanMobil.png";
 
 function Projects() {
   const projectss = [
     {
       title: "Car Sales Website",
       desc: "A responsive car sales management website that allows users to browse vehicles, view detailed information, and manage inventory through a modern admin dashboard.",
-      image: dashboardPmobil,
+      image: PenjualanMobil,
       github: "https://github.com/siswantoismail/ecommerce",
       demo: "https://penjualanmobil.vercel.app/",
     },
