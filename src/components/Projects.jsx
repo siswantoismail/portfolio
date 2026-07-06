@@ -125,7 +125,7 @@ function Projects() {
 
               {/* Buttons */}
               <div className="mt-6 flex gap-4">
-                <a
+                <motion.a
                   href={project.demo}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -148,9 +148,9 @@ function Projects() {
                   "
                 >
                   Live Demo
-                </a>
+                </motion.a>
 
-                <a
+                <motion.a
                   href={project.github}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -174,7 +174,7 @@ function Projects() {
                   "
                 >
                   GitHub
-                </a>
+                </motion.a>
               </div>
             </div>
           </motion.div>
